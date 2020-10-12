@@ -18,7 +18,6 @@ const addFavorite = async(newFavorite) => {
     url: 'http://localhost:3001/favorite',
     data: newFavorite
   });
-  console.log(`${favoriteModel.title} has been saved to DB`)
 }
 
 
@@ -39,4 +38,3 @@ export default Search;
 
 
 
-///search - render the Search component --> NASA Image and Video Library Search

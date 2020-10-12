@@ -12,4 +12,3 @@ function NavBar() {
 export default NavBar;
 
 
-///home - render the Home component --> NASA's Astronomy Picture of the Day (APOD)

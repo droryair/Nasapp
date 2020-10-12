@@ -6,15 +6,13 @@ import { Link } from 'react-router-dom';
 function MediaCard(props) {
 
     const cardLike = async (favorite,ToLike) => {
-        if(ToLike){ //Search.jsx
+        if(ToLike){
             const title= favorite.data[0].title
             const img= favorite.links[0].href
             const explanation= favorite.data[0].description
             await props.addFavorite({title,img,explanation})
-            console.log(`Saving "${favorite.data[0].title}" To The DB`)
-        }else{ //Favorites.jsx
+        }else{ 
             await props.deleteFavorite(props.favorite)
-            console.log(`Deleting "${favorite.title}" From The DB`)
         }
     }
 
@@ -22,9 +20,12 @@ function MediaCard(props) {
         return (
             <div className="App">
                 <h2>{props.card.title}</h2>
-                <img src={props.card.url} alt='...'></img>
+                {props.isImgType
+                    ? <img src={props.card.url} alt='...'></img>
+                    : <iframe width="420" height="315" src={props.card.url}> </iframe>
+                }
                 <div>{props.card.copyright}  {props.card.date}</div>
-                <span>{props.card.explanation}</span>
+                <p>{props.card.explanation}</p>
             </div>
         )
     }
@@ -45,17 +46,23 @@ function MediaCard(props) {
         return (
             <div>
                 <h2>{props.favorite.title}</h2>
-                {/* <Link to={`favorites/${props.favorites._id}`} > */}
+                <Link to={`favorites/?id=${props.favorite._id}`} >
                      <img src={props.favorite.img} alt='...'></img>  
-                     {/* </Link> */}
+                     </Link>
                 <button onClick={() => cardLike(props.favorite,false)}>Unlike</button>
             </div>
         )
     }
-// Navbar-> Favorites -> Favorites no id -> route server no id -> media card
-// pic-> /favorites/:id -> Favorites with id-> route with id -> MediaCard (title,img,description)
-// side tip: server finById- returns obj | find-returns array
-//res.send([result])
+
+    const showBroadFavorite=()=>{
+        return(
+            <div>
+                <h2>{props.broadFavorite.title}</h2>
+                <img src={props.broadFavorite.img} alt='...'></img>  
+                <p>{props.broadFavorite.explanation}</p>
+            </div>
+        )
+    }
 
     return (
         <div>
@@ -68,7 +75,11 @@ function MediaCard(props) {
                             : <div>
                                 {props.favorite
                                     ? showFavorites()
-                                    : <div></div>
+                                    : <div>
+                                        {props.broadFavorite &&
+                                         showBroadFavorite()
+                                        }
+                                    </div>
                                 }
                             </div>
                         }
@@ -82,4 +93,3 @@ export default MediaCard;
 
 
 
-///favourite/:id - render the MediaCard component, passing it a specific image's id to display from the DB (remember match?)
