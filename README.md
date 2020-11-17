@@ -9,7 +9,7 @@ An app with facinating articles from NASA's website.
  <em>Ant Design</em>
  </p>
 <img alt="CSS Logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"  height="50">
-<img alt="MongoDB Logo"  src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" height="50">
+<img alt="MongoDB Logo"  src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png" height="65">
 
 [//]: # ( <img alt="" src="" hright="50"> )
 
