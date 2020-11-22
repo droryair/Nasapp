@@ -1,4 +1,4 @@
-An app with facinating articles from NASA's website.
+An app with fascinating  articles from NASA's website.
 
 ![Nasapp gif](https://i.giphy.com/media/kbufEzx1qEQ84fHraK/giphy.webp)
 
