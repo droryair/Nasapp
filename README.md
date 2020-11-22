@@ -1,6 +1,6 @@
 An app with facinating articles from NASA's website.
 
-![Nasapp gif](https://i.giphy.com/media/OnvF9IpQmmZTWS2mEL/giphy.webp)
+![Nasapp gif](https://i.giphy.com/media/kbufEzx1qEQ84fHraK/giphy.webp)
 
 - :computer:The Technologies I used for this project:
 <img alt="JS Logo" src="https://www.vitoshacademy.com/wp-content/uploads/2015/04/JS.png"  height="50">
