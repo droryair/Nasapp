@@ -19,8 +19,8 @@ An app with facinating articles from NASA's website.
 in this page you will see a card containting NASA's daily article; title, image or video, and a description.
  
   ### Search Page: ###
+   <img alt="Search Page" src="https://i.postimg.cc/NF9z1LKk/Search-Page.png" height="400"> 
  Here you will be able to search for anything NASA- related, and get results of cards, each of which contains a title, image and a 'Thumbs Up' button. The button will add that card to the 'Favorites' page.
- <img alt="Search Page" src="https://i.postimg.cc/NF9z1LKk/Search-Page.png" height="400"> 
  
  ### Favorites Page: ###
   <img alt="Favorites Page" src="https://i.postimg.cc/sX0LQ5g2/Favorites-Page.png" height="400"> 
